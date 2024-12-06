@@ -1,0 +1,17 @@
+#display{
+    width: 300px;
+    border: 2px solid black;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cone{
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(orange 64%, blue 64%, blue 81%, black 81%);
+    border-radius: 50%
+}
+
+
