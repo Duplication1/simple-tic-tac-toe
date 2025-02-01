@@ -95,12 +95,9 @@ function checkTie() {
 buttons.forEach(button => {
     button.addEventListener('click', ()=>{
         button.disabled = true;
-        if(player1 === 'X'){
-            player1 = 'O';
-        }
-        else if(player1 === 'O'){
-            player1 = 'X';
-        }
+        
+       player1 = player1 === 'X' ? 'O' : 'X';
+        
         button.innerText = player1;
         checkWinner();
         checkTie();
